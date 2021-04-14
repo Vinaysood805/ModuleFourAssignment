@@ -1,0 +1,59 @@
+<!-- Assignment 4 JavaScript-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>JavaScript GOAL Tracker and Weather App</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Text+Me+One" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js" async></script>
+</head>
+<body> <!--Using canvas to add a Browser Api - In this case, I am using Picture Graphic Api.-->
+    <canvas class="myCanvas">
+        <p>Add suitable fallback here.</p>
+    </canvas>
+    <fieldset>
+        <header> <!--Goal Tracker Application-->
+            <img src="https://media1.giphy.com/media/l0K4m8FLCB4anX60g/giphy.gif" alt="goal tag" width="400" height="200">
+            <h1><b>JavaScript GOAL Tracker</b></h1>
+            <label for="goalName"><b>What are your goals for this week?</b></label>
+        </header>
+        <input type="text" id="goalName" placeholder="Today my goal is ..." name="goalName"><br>
+        <audio id="audio" src="audio/DolphinChatter.mp3" type="audio/mpeg"></audio>
+        <button id="Button">Set Goal</button>
+        <button id="Button1">Dark Mode</button>
+        <audio id="audio1" src="audio/Pling.mp3" type="audio/mpeg"></audio>
+    </fieldset>
+        <div>
+            <h2 id="heading1"></h2>
+            <ol id="goalNameList"></ol>
+        </div>
+        <div>
+            <h2 id="heading2"></h2>
+            <ol id="completedList"></ol>
+        </div>
+        <div class="container"> <!-- This is the Weather Application. It is a Third-party Api which tells about the weather in our location-->
+            <div class="app-title"><p>Weather</p></div>
+            <div class="notification"></div>
+            <div class="weather-container">
+                <div class="weather-icon"><img src="icons/unknown.png"></div>
+                <div class="temperature-value"><p>- °<span>C</span></p></div>
+                <div class="temperature-description"><p> - </p></div>
+                <div class="location"><p>-</p></div>
+            </div>
+        </div> <!--Another Browser Api, I used is Drag and Drop Api -->
+        <p>Drag the spongebob into the frame and see magic:</p>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <img id="drag1" src="https://i.pinimg.com/originals/aa/2f/1e/aa2f1ec59533e7348e5aa3f5bda0b3d8.gif" draggable="true" ondragstart="drag(event)" width="300" height="300">
+        <audio id="audio2" src="audio/Thankyou.wav" type="audio/wav"></audio>
+        <audio id="audio3" src="audio/spongebob.mp3" type="audio/mpeg"></audio>
+        <script src="app.js"></script>
+</body>
+</html>

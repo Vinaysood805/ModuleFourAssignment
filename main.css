@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+  font-family: 'Text Me One', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(204, 204, 204); 
+}
+
+body.dark {
+  color: white;
+  background: black;
+}
+
+h1 {
+  font-family: "Oswald Bold", Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(155, 80, 9);
+  font-weight: normal;
+  font-size: 40px;
+  margin: 5px;
+}
+
+h2 {
+  font-family: "Oswald Bold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(15, 84, 105);
+  font-weight: normal;
+  font-size: 25px;
+  margin: 5px;
+}
+
+label {
+  display: block;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+#goalName {
+  width: 30%;
+}
+
+li {
+  margin-top: 0.5rem;
+}
+
+#Button {
+  margin-top: 1rem;
+  color: white;
+  background-color: rgb(16, 99, 102);
+  border: none;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+#Button1 {
+  margin-top: 1rem;
+  color: white;
+  background-color: rgb(16, 17, 17);
+  border: none;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+#div1 {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 10px solid #8a6d6d;
+}
+
+.deleteGoal,
+.deleteGoalComplete {
+  margin-left: 2rem;
+  color: white;
+  background-color: rgb(209, 18, 18);
+  border: none;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+.goalComplete {
+  margin-left: 0.4rem;
+  color: white;
+  background-color: rgb(21, 73, 25);
+  border: none;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+}
+
+#Button:hover,
+#Button1:hover,
+.deleteGoal:hover{
+  opacity: 0.8;
+}
+.deleteGoalComplete:hover{
+  opacity: 0.8;
+}
+.goalComplete:hover {
+  opacity: 0.8;
+}
+
+.completedGoals {
+  text-decoration: line-through;
+}
